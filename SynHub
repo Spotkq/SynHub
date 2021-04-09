@@ -609,6 +609,7 @@ gameslist.Name = "gameslist"
 gameslist.Parent = SynHub
 gameslist.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 gameslist.BackgroundTransparency = 1.000
+gameslist.Visible = false
 gameslist.Position = UDim2.new(0.824817538, 0, 0.0322580636, 0)
 gameslist.Size = UDim2.new(0.0912408754, 0, 0.189753324, 0)
 gameslist.Active = true
