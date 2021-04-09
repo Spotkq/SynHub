@@ -1,0 +1,655 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local SynHub = Instance.new("ScreenGui")
+local menu = Instance.new("ImageLabel")
+local userinfo = Instance.new("ImageLabel")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local ImageLabel = Instance.new("ImageLabel")
+local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+local UICorner = Instance.new("UICorner")
+local Pattern = Instance.new("ImageLabel")
+local TextLabel_3 = Instance.new("TextLabel")
+local hub = Instance.new("ImageLabel")
+local TextLabel_4 = Instance.new("TextLabel")
+local Pattern_2 = Instance.new("ImageLabel")
+local hubbutton = Instance.new("TextButton")
+local discord = Instance.new("ImageLabel")
+local Pattern_3 = Instance.new("ImageLabel")
+local TextLabel_5 = Instance.new("TextLabel")
+local TextLabel_6 = Instance.new("TextLabel")
+local credits = Instance.new("ImageLabel")
+local Pattern_4 = Instance.new("ImageLabel")
+local TextLabel_7 = Instance.new("TextLabel")
+local UIAspectRatioConstraint_2 = Instance.new("UIAspectRatioConstraint")
+local hub_2 = Instance.new("ImageLabel")
+local BACK = Instance.new("ImageLabel")
+local Pattern_5 = Instance.new("ImageLabel")
+local TextLabel_8 = Instance.new("TextLabel")
+local backbutton = Instance.new("TextButton")
+local utlity = Instance.new("ImageLabel")
+local Pattern_6 = Instance.new("ImageLabel")
+local TextLabel_9 = Instance.new("TextLabel")
+local utilitybutton = Instance.new("TextButton")
+local mizthub = Instance.new("ImageLabel")
+local Pattern_7 = Instance.new("ImageLabel")
+local TextLabel_10 = Instance.new("TextLabel")
+local miztbutton = Instance.new("TextButton")
+local UIAspectRatioConstraint_3 = Instance.new("UIAspectRatioConstraint")
+local games = Instance.new("ImageLabel")
+local Pattern_8 = Instance.new("ImageLabel")
+local GAMESBUTTON = Instance.new("TextButton")
+local TextLabel_11 = Instance.new("TextLabel")
+local loginsystem = Instance.new("ImageLabel")
+local TextLabel_12 = Instance.new("TextLabel")
+local KEY = Instance.new("TextBox")
+local TextButton = Instance.new("TextButton")
+local UIAspectRatioConstraint_4 = Instance.new("UIAspectRatioConstraint")
+
+--Properties:
+
+SynHub.Name = "SynHub"
+SynHub.Parent = game.CoreGui
+
+menu.Name = "menu"
+menu.Parent = SynHub
+menu.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+menu.BackgroundTransparency = 1.000
+menu.Position = UDim2.new(0.303832114, 0, 0.275142312, 0)
+menu.Size = UDim2.new(0.391423345, 0, 0.447817832, 0)
+menu.Visible = false
+menu.Image = "rbxassetid://3570695787"
+menu.ImageColor3 = Color3.fromRGB(53, 53, 53)
+menu.ImageTransparency = 0.500
+menu.ScaleType = Enum.ScaleType.Slice
+menu.SliceCenter = Rect.new(100, 100, 100, 100)
+menu.SliceScale = 0.060
+menu.Active = true
+menu.Selectable = true
+menu.Draggable = true
+
+userinfo.Name = "userinfo"
+userinfo.Parent = menu
+userinfo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+userinfo.BackgroundTransparency = 1.000
+userinfo.Position = UDim2.new(0.0186480191, 0, 0.521186411, 0)
+userinfo.Size = UDim2.new(0.696969688, 0, 0.423728824, 0)
+userinfo.ZIndex = 2
+userinfo.Image = "rbxassetid://3570695787"
+userinfo.ImageColor3 = Color3.fromRGB(71, 71, 71)
+userinfo.ScaleType = Enum.ScaleType.Slice
+userinfo.SliceCenter = Rect.new(100, 100, 100, 100)
+userinfo.SliceScale = 0.120
+
+TextLabel.Parent = userinfo
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.0171565954, 0, 0.379644096, 0)
+TextLabel.Size = UDim2.new(0.236866802, 0, 0.216198012, 0)
+TextLabel.ZIndex = 3
+TextLabel.Font = Enum.Font.SourceSansSemibold
+TextLabel.Text = "Username"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+TextLabel_2.Parent = userinfo
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0.0171565954, 0, 0.595842183, 0)
+TextLabel_2.Size = UDim2.new(0.236866772, 0, 0.227002621, 0)
+TextLabel_2.ZIndex = 3
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "UserID"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+ImageLabel.Parent = userinfo
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.Position = UDim2.new(0.826674163, 0, 0.0274649262, 0)
+ImageLabel.Size = UDim2.new(0.144962326, 0, 0.457481563, 0)
+ImageLabel.ZIndex = 3
+ImageLabel.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+
+UIAspectRatioConstraint.Parent = ImageLabel
+UIAspectRatioConstraint.AspectRatio = 0.992
+
+UICorner.CornerRadius = UDim.new(0, 200)
+UICorner.Parent = ImageLabel
+
+Pattern.Name = "Pattern"
+Pattern.Parent = userinfo
+Pattern.AnchorPoint = Vector2.new(0.5, 0.5)
+Pattern.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Pattern.BackgroundTransparency = 1.000
+Pattern.Position = UDim2.new(0.499581933, 0, 0.5, 0)
+Pattern.Size = UDim2.new(0.996655524, 0, 1, 0)
+Pattern.ZIndex = 2
+Pattern.Image = "rbxassetid://121480522"
+Pattern.ImageTransparency = 0.800
+Pattern.ScaleType = Enum.ScaleType.Tile
+Pattern.SliceCenter = Rect.new(0, 256, 0, 256)
+Pattern.TileSize = UDim2.new(0, 45, 0, 45)
+
+TextLabel_3.Parent = userinfo
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Position = UDim2.new(0.0187984202, 0, 0, 0)
+TextLabel_3.Size = UDim2.new(0.498327762, 0, 0.379999995, 0)
+TextLabel_3.ZIndex = 3
+TextLabel_3.Font = Enum.Font.SourceSansBold
+TextLabel_3.Text = "USER INFORMATION"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
+
+hub.Name = "hub"
+hub.Parent = menu
+hub.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+hub.BackgroundTransparency = 1.000
+hub.Position = UDim2.new(0.0186480191, 0, 0.0635593235, 0)
+hub.Size = UDim2.new(0.631624281, 0, 0.423728824, 0)
+hub.ZIndex = 2
+hub.Image = "rbxassetid://3570695787"
+hub.ImageColor3 = Color3.fromRGB(71, 71, 71)
+hub.ScaleType = Enum.ScaleType.Slice
+hub.SliceCenter = Rect.new(100, 100, 100, 100)
+hub.SliceScale = 0.120
+hub.Selectable = true
+hub.Active = true
+hub.Draggable = true
+
+TextLabel_4.Parent = hub
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.Position = UDim2.new(0.0221429318, 0, 0, 0)
+TextLabel_4.Size = UDim2.new(0.398572773, 0, 0.50999999, 0)
+TextLabel_4.ZIndex = 3
+TextLabel_4.Font = Enum.Font.SourceSansBold
+TextLabel_4.Text = "SYNHUB"
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextScaled = true
+TextLabel_4.TextSize = 14.000
+TextLabel_4.TextWrapped = true
+
+Pattern_2.Name = "Pattern"
+Pattern_2.Parent = hub
+Pattern_2.AnchorPoint = Vector2.new(0.5, 0.5)
+Pattern_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Pattern_2.BackgroundTransparency = 1.000
+Pattern_2.Position = UDim2.new(0.499553949, 0, 0.5, 0)
+Pattern_2.Size = UDim2.new(0.996431947, 0, 1, 0)
+Pattern_2.ZIndex = 2
+Pattern_2.Image = "rbxassetid://2151741365"
+Pattern_2.ImageTransparency = 0.800
+Pattern_2.ScaleType = Enum.ScaleType.Tile
+Pattern_2.SliceCenter = Rect.new(0, 256, 0, 256)
+Pattern_2.TileSize = UDim2.new(0, 250, 0, 250)
+
+hubbutton.Name = "hubbutton"
+hubbutton.Parent = hub
+hubbutton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+hubbutton.BackgroundTransparency = 1.000
+hubbutton.Size = UDim2.new(0.996431947, 0, 1, 0)
+hubbutton.ZIndex = 4
+hubbutton.Font = Enum.Font.SourceSans
+hubbutton.TextColor3 = Color3.fromRGB(0, 0, 0)
+hubbutton.TextSize = 14.000
+
+discord.Name = "discord"
+discord.Parent = menu
+discord.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+discord.BackgroundTransparency = 1.000
+discord.Position = UDim2.new(0.678244293, 0, 0.0635593235, 0)
+discord.Size = UDim2.new(0.298445702, 0, 0.423728824, 0)
+discord.ZIndex = 2
+discord.Image = "rbxassetid://3570695787"
+discord.ImageColor3 = Color3.fromRGB(71, 71, 71)
+discord.ScaleType = Enum.ScaleType.Slice
+discord.SliceCenter = Rect.new(100, 100, 100, 100)
+discord.SliceScale = 0.120
+
+Pattern_3.Name = "Pattern"
+Pattern_3.Parent = discord
+Pattern_3.AnchorPoint = Vector2.new(0.5, 0.5)
+Pattern_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Pattern_3.BackgroundTransparency = 1.000
+Pattern_3.Position = UDim2.new(0.499967575, 0, 0.5, 0)
+Pattern_3.Size = UDim2.new(0.99974066, 0, 1, 0)
+Pattern_3.ZIndex = 2
+Pattern_3.Image = "rbxassetid://121480522"
+Pattern_3.ImageTransparency = 0.800
+Pattern_3.ScaleType = Enum.ScaleType.Tile
+Pattern_3.SliceCenter = Rect.new(0, 256, 0, 256)
+Pattern_3.TileSize = UDim2.new(0, 45, 0, 45)
+
+TextLabel_5.Parent = discord
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.Position = UDim2.new(0.0221428648, 0, 0, 0)
+TextLabel_5.Size = UDim2.new(0.695132196, 0, 0.360000014, 0)
+TextLabel_5.ZIndex = 3
+TextLabel_5.Font = Enum.Font.SourceSansBold
+TextLabel_5.Text = "DISCORD"
+TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.TextScaled = true
+TextLabel_5.TextSize = 14.000
+TextLabel_5.TextWrapped = true
+
+TextLabel_6.Parent = discord
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.BackgroundTransparency = 1.000
+TextLabel_6.Position = UDim2.new(0.0221428648, 0, 0.680000007, 0)
+TextLabel_6.Size = UDim2.new(0.820099771, 0, 0.230000004, 0)
+TextLabel_6.ZIndex = 3
+TextLabel_6.Font = Enum.Font.SourceSansSemibold
+TextLabel_6.Text = "ACTUALLY NO"
+TextLabel_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.TextScaled = true
+TextLabel_6.TextSize = 14.000
+TextLabel_6.TextWrapped = true
+
+credits.Name = "credits"
+credits.Parent = menu
+credits.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+credits.BackgroundTransparency = 1.000
+credits.Position = UDim2.new(0.736596763, 0, 0.521186411, 0)
+credits.Size = UDim2.new(0.240093246, 0, 0.423728824, 0)
+credits.ZIndex = 2
+credits.Image = "rbxassetid://3570695787"
+credits.ImageColor3 = Color3.fromRGB(71, 71, 71)
+credits.ScaleType = Enum.ScaleType.Slice
+credits.SliceCenter = Rect.new(100, 100, 100, 100)
+credits.SliceScale = 0.120
+
+Pattern_4.Name = "Pattern"
+Pattern_4.Parent = credits
+Pattern_4.AnchorPoint = Vector2.new(0.5, 0.5)
+Pattern_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Pattern_4.BackgroundTransparency = 1.000
+Pattern_4.Position = UDim2.new(0.501112878, 0, 0.5, 0)
+Pattern_4.Size = UDim2.new(0.990291238, 0, 1, 0)
+Pattern_4.ZIndex = 2
+Pattern_4.Image = "rbxassetid://2151741365"
+Pattern_4.ImageTransparency = 0.800
+Pattern_4.ScaleType = Enum.ScaleType.Tile
+Pattern_4.SliceCenter = Rect.new(0, 256, 0, 256)
+Pattern_4.TileSize = UDim2.new(0, 250, 0, 250)
+
+TextLabel_7.Parent = credits
+TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.BackgroundTransparency = 1.000
+TextLabel_7.Position = UDim2.new(0.0221427251, 0, 0, 0)
+TextLabel_7.Size = UDim2.new(0.776699007, 0, 0.360000014, 0)
+TextLabel_7.ZIndex = 3
+TextLabel_7.Font = Enum.Font.SourceSansBold
+TextLabel_7.Text = "CREDITS"
+TextLabel_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.TextScaled = true
+TextLabel_7.TextSize = 14.000
+TextLabel_7.TextWrapped = true
+
+UIAspectRatioConstraint_2.Parent = menu
+UIAspectRatioConstraint_2.AspectRatio = 1.818
+
+hub_2.Name = "hub"
+hub_2.Parent = SynHub
+hub_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+hub_2.BackgroundTransparency = 1.000
+hub_2.Position = UDim2.new(0.303832114, 0, 0.275142312, 0)
+hub_2.Size = UDim2.new(0.391423345, 0, 0.447817832, 0)
+hub_2.Visible = false
+hub_2.Image = "rbxassetid://3570695787"
+hub_2.ImageColor3 = Color3.fromRGB(53, 53, 53)
+hub_2.ImageTransparency = 0.500
+hub_2.ScaleType = Enum.ScaleType.Slice
+hub_2.SliceCenter = Rect.new(100, 100, 100, 100)
+hub_2.SliceScale = 0.060
+
+BACK.Name = "BACK"
+BACK.Parent = hub_2
+BACK.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BACK.BackgroundTransparency = 1.000
+BACK.Position = UDim2.new(0.0186480191, 0, 0.521186411, 0)
+BACK.Size = UDim2.new(0.559440553, 0, 0.423728824, 0)
+BACK.ZIndex = 2
+BACK.Image = "rbxassetid://3570695787"
+BACK.ImageColor3 = Color3.fromRGB(71, 71, 71)
+BACK.ScaleType = Enum.ScaleType.Slice
+BACK.SliceCenter = Rect.new(100, 100, 100, 100)
+BACK.SliceScale = 0.120
+
+Pattern_5.Name = "Pattern"
+Pattern_5.Parent = BACK
+Pattern_5.AnchorPoint = Vector2.new(0.5, 0.5)
+Pattern_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Pattern_5.BackgroundTransparency = 1.000
+Pattern_5.Position = UDim2.new(0.499581933, 0, 0.5, 0)
+Pattern_5.Size = UDim2.new(0.996655524, 0, 1, 0)
+Pattern_5.ZIndex = 2
+Pattern_5.Image = "rbxassetid://121480522"
+Pattern_5.ImageTransparency = 0.800
+Pattern_5.ScaleType = Enum.ScaleType.Tile
+Pattern_5.SliceCenter = Rect.new(0, 256, 0, 256)
+Pattern_5.TileSize = UDim2.new(0, 45, 0, 45)
+
+TextLabel_8.Parent = BACK
+TextLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.BackgroundTransparency = 1.000
+TextLabel_8.Position = UDim2.new(0.0187985729, 0, 0, 0)
+TextLabel_8.Size = UDim2.new(0.335827768, 0, 0.379999995, 0)
+TextLabel_8.ZIndex = 3
+TextLabel_8.Font = Enum.Font.SourceSansBold
+TextLabel_8.Text = "BACK"
+TextLabel_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.TextScaled = true
+TextLabel_8.TextSize = 14.000
+TextLabel_8.TextWrapped = true
+
+backbutton.Name = "backbutton"
+backbutton.Parent = BACK
+backbutton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+backbutton.BackgroundTransparency = 1.000
+backbutton.Size = UDim2.new(0.996431947, 0, 1, 0)
+backbutton.ZIndex = 4
+backbutton.Font = Enum.Font.SourceSans
+backbutton.TextColor3 = Color3.fromRGB(0, 0, 0)
+backbutton.TextSize = 14.000
+backbutton.MouseButton1Click:Connect(function()
+	menu.Visible = true
+	hub.Visible = false
+end)
+
+utlity.Name = "utlity"
+utlity.Parent = hub_2
+utlity.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+utlity.BackgroundTransparency = 1.000
+utlity.Position = UDim2.new(0.468454033, 0, 0.0635593235, 0)
+utlity.Size = UDim2.new(0.508235931, 0, 0.423728824, 0)
+utlity.ZIndex = 2
+utlity.Image = "rbxassetid://3570695787"
+utlity.ImageColor3 = Color3.fromRGB(71, 71, 71)
+utlity.ScaleType = Enum.ScaleType.Slice
+utlity.SliceCenter = Rect.new(100, 100, 100, 100)
+utlity.SliceScale = 0.120
+
+Pattern_6.Name = "Pattern"
+Pattern_6.Parent = utlity
+Pattern_6.AnchorPoint = Vector2.new(0.5, 0.5)
+Pattern_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Pattern_6.BackgroundTransparency = 1.000
+Pattern_6.Position = UDim2.new(0.499967575, 0, 0.5, 0)
+Pattern_6.Size = UDim2.new(0.99974066, 0, 1, 0)
+Pattern_6.ZIndex = 2
+Pattern_6.Image = "rbxassetid://121480522"
+Pattern_6.ImageTransparency = 0.800
+Pattern_6.ScaleType = Enum.ScaleType.Tile
+Pattern_6.SliceCenter = Rect.new(0, 256, 0, 256)
+Pattern_6.TileSize = UDim2.new(0, 45, 0, 45)
+
+TextLabel_9.Parent = utlity
+TextLabel_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_9.BackgroundTransparency = 1.000
+TextLabel_9.Position = UDim2.new(0.0221428685, 0, 0, 0)
+TextLabel_9.Size = UDim2.new(0.461222857, 0, 0.360000014, 0)
+TextLabel_9.ZIndex = 3
+TextLabel_9.Font = Enum.Font.SourceSansBold
+TextLabel_9.Text = "UTILITY"
+TextLabel_9.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_9.TextScaled = true
+TextLabel_9.TextSize = 14.000
+TextLabel_9.TextWrapped = true
+
+utilitybutton.Name = "utilitybutton"
+utilitybutton.Parent = utlity
+utilitybutton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+utilitybutton.BackgroundTransparency = 1.000
+utilitybutton.Size = UDim2.new(0.996431947, 0, 1, 0)
+utilitybutton.ZIndex = 4
+utilitybutton.Font = Enum.Font.SourceSans
+utilitybutton.TextColor3 = Color3.fromRGB(0, 0, 0)
+utilitybutton.TextSize = 14.000
+utilitybutton.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Spotkq/utility/main/source", true))()
+end)
+
+mizthub.Name = "mizthub"
+mizthub.Parent = hub_2
+mizthub.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+mizthub.BackgroundTransparency = 1.000
+mizthub.Position = UDim2.new(0.592074573, 0, 0.521186411, 0)
+mizthub.Size = UDim2.new(0.384615391, 0, 0.423728824, 0)
+mizthub.ZIndex = 2
+mizthub.Image = "rbxassetid://3570695787"
+mizthub.ImageColor3 = Color3.fromRGB(71, 71, 71)
+mizthub.ScaleType = Enum.ScaleType.Slice
+mizthub.SliceCenter = Rect.new(100, 100, 100, 100)
+mizthub.SliceScale = 0.120
+
+Pattern_7.Name = "Pattern"
+Pattern_7.Parent = mizthub
+Pattern_7.AnchorPoint = Vector2.new(0.5, 0.5)
+Pattern_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Pattern_7.BackgroundTransparency = 1.000
+Pattern_7.Position = UDim2.new(0.501112878, 0, 0.5, 0)
+Pattern_7.Size = UDim2.new(0.990291238, 0, 1, 0)
+Pattern_7.ZIndex = 2
+Pattern_7.Image = "rbxassetid://2151741365"
+Pattern_7.ImageTransparency = 0.800
+Pattern_7.ScaleType = Enum.ScaleType.Tile
+Pattern_7.SliceCenter = Rect.new(0, 256, 0, 256)
+Pattern_7.TileSize = UDim2.new(0, 250, 0, 250)
+
+TextLabel_10.Parent = mizthub
+TextLabel_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_10.BackgroundTransparency = 1.000
+TextLabel_10.Position = UDim2.new(0.0221428145, 0, 0, 0)
+TextLabel_10.Size = UDim2.new(0.564577758, 0, 0.360000014, 0)
+TextLabel_10.ZIndex = 3
+TextLabel_10.Font = Enum.Font.SourceSansBold
+TextLabel_10.Text = "MIZT HUB"
+TextLabel_10.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_10.TextScaled = true
+TextLabel_10.TextSize = 14.000
+TextLabel_10.TextWrapped = true
+
+miztbutton.Name = "miztbutton"
+miztbutton.Parent = mizthub
+miztbutton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+miztbutton.BackgroundTransparency = 1.000
+miztbutton.Size = UDim2.new(0.996431947, 0, 1, 0)
+miztbutton.ZIndex = 4
+miztbutton.Font = Enum.Font.SourceSans
+miztbutton.TextColor3 = Color3.fromRGB(0, 0, 0)
+miztbutton.TextSize = 14.000
+miztbutton.MouseButton1Click:Connect(function()
+	_G.HalfNet = false -- Just make it true
+	_G.CustomGui = false -- if you have custom gui turn this on, put the custom gui script below this loadstring
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Sylixe/MiztHub/master/MainFolder/uqXAxyVdQpWTcRCdFXU6Yt2meuDkYcLUDN4SJRekQWZ5wp368zKHreYT4w82AH4U.lua",true))()
+end)
+
+UIAspectRatioConstraint_3.Parent = hub_2
+UIAspectRatioConstraint_3.AspectRatio = 1.818
+
+games.Name = "games"
+games.Parent = hub_2
+games.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+games.BackgroundTransparency = 1.000
+games.Position = UDim2.new(0.0186480191, 0, 0.0635593235, 0)
+games.Size = UDim2.new(0.431158155, 0, 0.423728824, 0)
+games.ZIndex = 2
+games.Image = "rbxassetid://3570695787"
+games.ImageColor3 = Color3.fromRGB(71, 71, 71)
+games.ScaleType = Enum.ScaleType.Slice
+games.SliceCenter = Rect.new(100, 100, 100, 100)
+games.SliceScale = 0.120
+
+Pattern_8.Name = "Pattern"
+Pattern_8.Parent = games
+Pattern_8.AnchorPoint = Vector2.new(0.5, 0.5)
+Pattern_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Pattern_8.BackgroundTransparency = 1.000
+Pattern_8.Position = UDim2.new(0.499553949, 0, 0.5, 0)
+Pattern_8.Size = UDim2.new(0.996431947, 0, 1, 0)
+Pattern_8.ZIndex = 2
+Pattern_8.Image = "rbxassetid://2151741365"
+Pattern_8.ImageTransparency = 0.800
+Pattern_8.ScaleType = Enum.ScaleType.Tile
+Pattern_8.SliceCenter = Rect.new(0, 256, 0, 256)
+Pattern_8.TileSize = UDim2.new(0, 250, 0, 250)
+
+GAMESBUTTON.Name = "GAMESBUTTON"
+GAMESBUTTON.Parent = games
+GAMESBUTTON.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GAMESBUTTON.BackgroundTransparency = 1.000
+GAMESBUTTON.Size = UDim2.new(0.996431947, 0, 1, 0)
+GAMESBUTTON.ZIndex = 4
+GAMESBUTTON.Font = Enum.Font.SourceSans
+GAMESBUTTON.TextColor3 = Color3.fromRGB(0, 0, 0)
+GAMESBUTTON.TextSize = 14.000
+
+TextLabel_11.Parent = games
+TextLabel_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_11.BackgroundTransparency = 1.000
+TextLabel_11.Position = UDim2.new(0.0221429039, 0, 0, 0)
+TextLabel_11.Size = UDim2.new(0.544544876, 0, 0.360000014, 0)
+TextLabel_11.ZIndex = 3
+TextLabel_11.Font = Enum.Font.SourceSansBold
+TextLabel_11.Text = "GAMES"
+TextLabel_11.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_11.TextScaled = true
+TextLabel_11.TextSize = 14.000
+TextLabel_11.TextWrapped = true
+
+loginsystem.Name = "loginsystem"
+loginsystem.Parent = SynHub
+loginsystem.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+loginsystem.BackgroundTransparency = 1.000
+loginsystem.Position = UDim2.new(0.348540157, 0, 0.318785578, 0)
+loginsystem.Size = UDim2.new(0.302007288, 0, 0.3605313, 0)
+loginsystem.Image = "rbxassetid://3570695787"
+loginsystem.ImageColor3 = Color3.fromRGB(43, 43, 43)
+loginsystem.ScaleType = Enum.ScaleType.Slice
+loginsystem.SliceCenter = Rect.new(100, 100, 100, 100)
+loginsystem.SliceScale = 0.120
+loginsystem.Active = true
+loginsystem.Selectable = true
+loginsystem.Draggable = true
+
+TextLabel_12.Parent = loginsystem
+TextLabel_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_12.BackgroundTransparency = 1.000
+TextLabel_12.Position = UDim2.new(0.196374625, 0, 0, 0)
+TextLabel_12.Size = UDim2.new(0.604229629, 0, 0.236842111, 0)
+TextLabel_12.Font = Enum.Font.SourceSans
+TextLabel_12.Text = "LOGIN SYSTEM"
+TextLabel_12.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_12.TextScaled = true
+TextLabel_12.TextSize = 14.000
+TextLabel_12.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_12.TextWrapped = true
+
+KEY.Name = "KEY"
+KEY.Parent = loginsystem
+KEY.BackgroundColor3 = Color3.fromRGB(66, 66, 66)
+KEY.BorderSizePixel = 0
+KEY.Position = UDim2.new(0.199395776, 0, 0.310526311, 0)
+KEY.Size = UDim2.new(0.604229629, 0, 0.263157904, 0)
+KEY.Font = Enum.Font.SourceSansBold
+KEY.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+KEY.PlaceholderText = "--KEY"
+KEY.Text = ""
+KEY.TextColor3 = Color3.fromRGB(0, 0, 0)
+KEY.TextScaled = true
+KEY.TextSize = 14.000
+KEY.TextWrapped = true
+KEY.TextXAlignment = Enum.TextXAlignment.Left
+
+TextButton.Parent = loginsystem
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.BackgroundTransparency = 1.000
+TextButton.Position = UDim2.new(0.199395776, 0, 0.66315788, 0)
+TextButton.Size = UDim2.new(0.604229629, 0, 0.263157904, 0)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "LOGIN"
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
+TextButton.MouseButton1Click:Connect(function()
+	if KEY.Text == "d5g75lvcx123" then
+		loginsystem.Visible = false
+		menu.Visible = true
+	end
+end)
+
+UIAspectRatioConstraint_4.Parent = loginsystem
+UIAspectRatioConstraint_4.AspectRatio = 1.742
+
+-- Scripts:
+
+local function HSZPT_fake_script() -- TextLabel.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel)
+
+	local playerservice = game:GetService("Players")
+	local player = playerservice.LocalPlayer
+	
+	local Playertext = script.Parent
+	
+	function PlayerAddedName()
+		Playertext.Text = player.Name
+	end
+	
+	player.CharacterAdded:Connect(PlayerAddedName())
+end
+coroutine.wrap(HSZPT_fake_script)()
+local function ELCGKA_fake_script() -- TextLabel_2.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel_2)
+
+	local playerservice = game:GetService("Players")
+	local player = playerservice.LocalPlayer
+	
+	local Playertext = script.Parent
+	
+	function PlayerAddedName()
+		Playertext.Text = player.UserId
+	end
+	
+	player.CharacterAdded:Connect(PlayerAddedName())
+end
+coroutine.wrap(ELCGKA_fake_script)()
+local function WGHZXZN_fake_script() -- ImageLabel.LocalScript 
+	local script = Instance.new('LocalScript', ImageLabel)
+
+	local Players = game:GetService("Players")
+	
+	local player = Players.LocalPlayer
+	
+	-- Fetch the thumbnail
+	local userId = player.UserId
+	local thumbType = Enum.ThumbnailType.HeadShot
+	local thumbSize = Enum.ThumbnailSize.Size420x420
+	local content, isReady = Players:GetUserThumbnailAsync(userId, thumbType, thumbSize)
+	
+	-- Set the ImageLabel's content to the user thumbnail
+	local imageLabel = script.Parent
+	imageLabel.Image = content
+end
+coroutine.wrap(WGHZXZN_fake_script)()
+local function LRRQZPX_fake_script() -- hubbutton.LocalScript 
+	local script = Instance.new('LocalScript', hubbutton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Parent.hub.Visible = true
+		script.Parent.Parent.Parent.Parent.menu.Visible = false
+	end)
+end
+coroutine.wrap(LRRQZPX_fake_script)()
