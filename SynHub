@@ -48,6 +48,19 @@ local TextLabel_12 = Instance.new("TextLabel")
 local KEY = Instance.new("TextBox")
 local TextButton = Instance.new("TextButton")
 local UIAspectRatioConstraint_4 = Instance.new("UIAspectRatioConstraint")
+local gameslist = Instance.new("Frame")
+local aot = Instance.new("Frame")
+local UIGradient = Instance.new("UIGradient")
+local UICorner_2 = Instance.new("UICorner")
+local TextButton_2 = Instance.new("TextButton")
+local PRISONLIFE = Instance.new("Frame")
+local UIGradient_2 = Instance.new("UIGradient")
+local UICorner_3 = Instance.new("UICorner")
+local TextButton_3 = Instance.new("TextButton")
+local SITE44V5 = Instance.new("Frame")
+local UIGradient_3 = Instance.new("UIGradient")
+local UICorner_4 = Instance.new("UICorner")
+local TextButton_4 = Instance.new("TextButton")
 
 --Properties:
 
@@ -163,9 +176,6 @@ hub.ImageColor3 = Color3.fromRGB(71, 71, 71)
 hub.ScaleType = Enum.ScaleType.Slice
 hub.SliceCenter = Rect.new(100, 100, 100, 100)
 hub.SliceScale = 0.120
-hub.Selectable = true
-hub.Active = true
-hub.Draggable = true
 
 TextLabel_4.Parent = hub
 TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -203,6 +213,10 @@ hubbutton.ZIndex = 4
 hubbutton.Font = Enum.Font.SourceSans
 hubbutton.TextColor3 = Color3.fromRGB(0, 0, 0)
 hubbutton.TextSize = 14.000
+hubbutton.MouseButton1Click:Connect(function()
+	menu.Visible = false
+	hub.Visible = true
+end)
 
 discord.Name = "discord"
 discord.Parent = menu
@@ -313,6 +327,9 @@ hub_2.ImageTransparency = 0.500
 hub_2.ScaleType = Enum.ScaleType.Slice
 hub_2.SliceCenter = Rect.new(100, 100, 100, 100)
 hub_2.SliceScale = 0.060
+hub_2.Active = true
+hub_2.Selectable = true
+hub_2.Draggable = true
 
 BACK.Name = "BACK"
 BACK.Parent = hub_2
@@ -364,8 +381,8 @@ backbutton.Font = Enum.Font.SourceSans
 backbutton.TextColor3 = Color3.fromRGB(0, 0, 0)
 backbutton.TextSize = 14.000
 backbutton.MouseButton1Click:Connect(function()
-	menu.Visible = true
 	hub.Visible = false
+	menu.Visible = true
 end)
 
 utlity.Name = "utlity"
@@ -470,11 +487,6 @@ miztbutton.ZIndex = 4
 miztbutton.Font = Enum.Font.SourceSans
 miztbutton.TextColor3 = Color3.fromRGB(0, 0, 0)
 miztbutton.TextSize = 14.000
-miztbutton.MouseButton1Click:Connect(function()
-	_G.HalfNet = false -- Just make it true
-	_G.CustomGui = false -- if you have custom gui turn this on, put the custom gui script below this loadstring
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/Sylixe/MiztHub/master/MainFolder/uqXAxyVdQpWTcRCdFXU6Yt2meuDkYcLUDN4SJRekQWZ5wp368zKHreYT4w82AH4U.lua",true))()
-end)
 
 UIAspectRatioConstraint_3.Parent = hub_2
 UIAspectRatioConstraint_3.AspectRatio = 1.818
@@ -515,6 +527,9 @@ GAMESBUTTON.ZIndex = 4
 GAMESBUTTON.Font = Enum.Font.SourceSans
 GAMESBUTTON.TextColor3 = Color3.fromRGB(0, 0, 0)
 GAMESBUTTON.TextSize = 14.000
+GAMESBUTTON.MouseButton1Click:Connect(function()
+	gameslist.Visible = true
+end)
 
 TextLabel_11.Parent = games
 TextLabel_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -540,9 +555,6 @@ loginsystem.ImageColor3 = Color3.fromRGB(43, 43, 43)
 loginsystem.ScaleType = Enum.ScaleType.Slice
 loginsystem.SliceCenter = Rect.new(100, 100, 100, 100)
 loginsystem.SliceScale = 0.120
-loginsystem.Active = true
-loginsystem.Selectable = true
-loginsystem.Draggable = true
 
 TextLabel_12.Parent = loginsystem
 TextLabel_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -586,7 +598,6 @@ TextButton.TextSize = 14.000
 TextButton.TextWrapped = true
 TextButton.MouseButton1Click:Connect(function()
 	if KEY.Text == "d5g75lvcx123" then
-		loginsystem.Visible = false
 		menu.Visible = true
 	end
 end)
@@ -594,9 +605,100 @@ end)
 UIAspectRatioConstraint_4.Parent = loginsystem
 UIAspectRatioConstraint_4.AspectRatio = 1.742
 
+gameslist.Name = "gameslist"
+gameslist.Parent = SynHub
+gameslist.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+gameslist.BackgroundTransparency = 1.000
+gameslist.Position = UDim2.new(0.824817538, 0, 0.0322580636, 0)
+gameslist.Size = UDim2.new(0.0912408754, 0, 0.189753324, 0)
+gameslist.Active = true
+gameslist.Selectable = true
+gameslist.Draggable = true
+
+aot.Name = "aot"
+aot.Parent = gameslist
+aot.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+aot.BorderColor3 = Color3.fromRGB(27, 42, 53)
+aot.BorderSizePixel = 0
+aot.Position = UDim2.new(1.19624388, 0, -0.0542855822, 0)
+aot.Size = UDim2.new(0.589999974, 0, 0.560000002, 0)
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(45, 168, 182)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(64, 96, 161))}
+UIGradient.Parent = aot
+
+UICorner_2.CornerRadius = UDim.new(0, 4)
+UICorner_2.Parent = aot
+
+TextButton_2.Parent = aot
+TextButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_2.BackgroundTransparency = 1.000
+TextButton_2.Position = UDim2.new(0.0847458839, 0, 0.0535714291, 0)
+TextButton_2.Size = UDim2.new(0.819925666, 0, 0.892857134, 0)
+TextButton_2.Font = Enum.Font.SourceSans
+TextButton_2.Text = "AOT:IP"
+TextButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_2.TextScaled = true
+TextButton_2.TextSize = 14.000
+TextButton_2.TextWrapped = true
+TextButton_2.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Spotkq/AOTIPUI/main/source", true))()
+end)
+
+PRISONLIFE.Name = "PRISONLIFE"
+PRISONLIFE.Parent = gameslist
+PRISONLIFE.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PRISONLIFE.BorderColor3 = Color3.fromRGB(27, 42, 53)
+PRISONLIFE.BorderSizePixel = 0
+PRISONLIFE.Position = UDim2.new(1.19624388, 0, 0.635714412, 0)
+PRISONLIFE.Size = UDim2.new(0.589999974, 0, 0.560000002, 0)
+
+UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(45, 168, 182)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(64, 96, 161))}
+UIGradient_2.Parent = PRISONLIFE
+
+UICorner_3.CornerRadius = UDim.new(0, 4)
+UICorner_3.Parent = PRISONLIFE
+
+TextButton_3.Parent = PRISONLIFE
+TextButton_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_3.BackgroundTransparency = 1.000
+TextButton_3.Position = UDim2.new(-0.0169460494, 0, 0, 0)
+TextButton_3.Size = UDim2.new(1.016945, 0, 1, 0)
+TextButton_3.Font = Enum.Font.SourceSans
+TextButton_3.Text = "PRISONLIFE"
+TextButton_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_3.TextScaled = true
+TextButton_3.TextSize = 14.000
+TextButton_3.TextWrapped = true
+
+SITE44V5.Name = "SITE44V5"
+SITE44V5.Parent = gameslist
+SITE44V5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SITE44V5.BorderColor3 = Color3.fromRGB(27, 42, 53)
+SITE44V5.BorderSizePixel = 0
+SITE44V5.Position = UDim2.new(1.19624388, 0, 1.32571435, 0)
+SITE44V5.Size = UDim2.new(0.589999974, 0, 0.560000002, 0)
+
+UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(45, 168, 182)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(64, 96, 161))}
+UIGradient_3.Parent = SITE44V5
+
+UICorner_4.CornerRadius = UDim.new(0, 4)
+UICorner_4.Parent = SITE44V5
+
+TextButton_4.Parent = SITE44V5
+TextButton_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_4.BackgroundTransparency = 1.000
+TextButton_4.Position = UDim2.new(0.0847458839, 0, 0.0535714291, 0)
+TextButton_4.Size = UDim2.new(0.819925666, 0, 0.892857134, 0)
+TextButton_4.Font = Enum.Font.SourceSans
+TextButton_4.Text = "SITIE 44V5"
+TextButton_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_4.TextScaled = true
+TextButton_4.TextSize = 14.000
+TextButton_4.TextWrapped = true
+
 -- Scripts:
 
-local function HSZPT_fake_script() -- TextLabel.LocalScript 
+local function LHLEJVT_fake_script() -- TextLabel.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel)
 
 	local playerservice = game:GetService("Players")
@@ -610,8 +712,8 @@ local function HSZPT_fake_script() -- TextLabel.LocalScript
 	
 	player.CharacterAdded:Connect(PlayerAddedName())
 end
-coroutine.wrap(HSZPT_fake_script)()
-local function ELCGKA_fake_script() -- TextLabel_2.LocalScript 
+coroutine.wrap(LHLEJVT_fake_script)()
+local function BWPGLVK_fake_script() -- TextLabel_2.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel_2)
 
 	local playerservice = game:GetService("Players")
@@ -625,8 +727,8 @@ local function ELCGKA_fake_script() -- TextLabel_2.LocalScript
 	
 	player.CharacterAdded:Connect(PlayerAddedName())
 end
-coroutine.wrap(ELCGKA_fake_script)()
-local function WGHZXZN_fake_script() -- ImageLabel.LocalScript 
+coroutine.wrap(BWPGLVK_fake_script)()
+local function OMWAOSY_fake_script() -- ImageLabel.LocalScript 
 	local script = Instance.new('LocalScript', ImageLabel)
 
 	local Players = game:GetService("Players")
@@ -643,13 +745,28 @@ local function WGHZXZN_fake_script() -- ImageLabel.LocalScript
 	local imageLabel = script.Parent
 	imageLabel.Image = content
 end
-coroutine.wrap(WGHZXZN_fake_script)()
-local function LRRQZPX_fake_script() -- hubbutton.LocalScript 
-	local script = Instance.new('LocalScript', hubbutton)
+coroutine.wrap(OMWAOSY_fake_script)()
+local function OEMDRD_fake_script() -- menu.LocalScript 
+	local script = Instance.new('LocalScript', menu)
 
-	script.Parent.MouseButton1Click:Connect(function()
-		script.Parent.Parent.Parent.Parent.hub.Visible = true
-		script.Parent.Parent.Parent.Parent.menu.Visible = false
-	end)
+	script.Parent.Active = true
+	script.Parent.Selectable = true
+	script.Parent.Draggable = true
 end
-coroutine.wrap(LRRQZPX_fake_script)()
+coroutine.wrap(OEMDRD_fake_script)()
+local function WCNNPYI_fake_script() -- hub_2.LocalScript 
+	local script = Instance.new('LocalScript', hub_2)
+
+	script.Parent.Active = true
+	script.Parent.Selectable = true
+	script.Parent.Draggable = true
+end
+coroutine.wrap(WCNNPYI_fake_script)()
+local function CZOCAH_fake_script() -- loginsystem.LocalScript 
+	local script = Instance.new('LocalScript', loginsystem)
+
+	script.Parent.Active = true
+	script.Parent.Selectable = true
+	script.Parent.Draggable = true
+end
+coroutine.wrap(CZOCAH_fake_script)()
